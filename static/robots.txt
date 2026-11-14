@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://international-patient-summary.github.io/sitemap.xml
