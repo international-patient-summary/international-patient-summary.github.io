@@ -26,6 +26,12 @@ const exists = (path) =>
 	);
 
 if (!(await exists(localesSrc))) {
+	// --optional: in the standalone site repository there is no ../locales,
+	// and the committed content/ is what the build uses. Skip quietly.
+	if (process.argv.includes('--optional') && (await exists(localesOut))) {
+		console.log(`No locales/ at ${localesSrc}; using committed content/.`);
+		process.exit(0);
+	}
 	console.error(`No locales/ directory at ${localesSrc}. Set SOURCE=/path/to/the/main/repository.`);
 	process.exit(1);
 }
