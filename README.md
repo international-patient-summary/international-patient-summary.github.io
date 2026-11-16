@@ -20,7 +20,9 @@ All three are ordinary npm dependencies. Only the theme stylesheets are vendored
 
 ## Develop
 
-Requires Node.js 26 and pnpm 11.
+Requires Node.js 26 or later and pnpm 11 (`packageManager` pins pnpm 11.21.0).
+
+pnpm enforces a minimum release age for new package versions. `pnpm-workspace.yaml` exempts only the exact Lily releases this site needs (`svelte-headless@0.9.0` and `svelte-picker-bar@0.6.0`) through `minimumReleaseAgeExclude`; the policy itself stays on.
 
 ```sh
 make install     # pnpm install --frozen-lockfile
