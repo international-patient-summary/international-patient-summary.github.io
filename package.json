@@ -28,21 +28,21 @@
 		"@lilydesignsystem/svelte-picker-bar": "^0.6.0",
 		"@lilydesignsystem/themes": "^0.6.2",
 		"github-slugger": "^2.0.0",
-		"marked": "^18.2.0"
+		"marked": "^18.2.1"
 	},
 	"devDependencies": {
 		"@eslint/js": "^10.0.1",
 		"@sveltejs/adapter-static": "^4.0.1",
-		"@sveltejs/kit": "^3.2.0",
+		"@sveltejs/kit": "^3.4.0",
 		"@sveltejs/vite-plugin-svelte": "^7.3.1",
 		"eslint": "^10.15.0",
 		"eslint-config-prettier": "^10.1.8",
 		"eslint-plugin-svelte": "^3.24.1",
 		"globals": "^17.14.0",
 		"prettier": "^3.10.1",
-		"prettier-plugin-svelte": "^4.1.1",
+		"prettier-plugin-svelte": "^4.2.0",
 		"sirv-cli": "^3.0.1",
-		"svelte": "^5.57.3",
+		"svelte": "^5.58.0",
 		"svelte-check": "^4.7.8",
 		"typescript": "^6.0.3",
 		"vite": "^8.3.8"
