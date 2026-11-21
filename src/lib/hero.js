@@ -2,7 +2,11 @@
 // `language` is the CLDR 49 word for "Language"; `tagline` is the sub-headline.
 // A language not listed falls back to English.
 
-const HERO = {
+import { HERO_B } from './ui-strings-b.js';
+import { HERO_C } from './ui-strings-c.js';
+import { HERO_D } from './ui-strings-d.js';
+
+const HERO_BASE = {
 	ar: { language: 'اللغة', tagline: 'المعيار العالمي لتبادل البيانات الصحية الأساسية عبر الحدود.' },
 	bn: { language: 'ভাষা', tagline: 'সীমানা পেরিয়ে মূল স্বাস্থ্যতথ্য ভাগ করার বিশ্বমান।' },
 	cy: {
@@ -71,6 +75,8 @@ const HERO = {
 	},
 	zh: { language: '语言', tagline: '跨越国界共享关键健康数据的全球标准。' }
 };
+
+const HERO = { ...HERO_BASE, ...HERO_B, ...HERO_C, ...HERO_D };
 
 /** Hero strings for a locale code such as 'pt-br'. */
 export function hero(locale) {

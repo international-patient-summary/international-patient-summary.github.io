@@ -3,7 +3,7 @@
 // `footerTaglineSuffix` follows the site title. Missing keys fall back to
 // English in i18n.js.
 
-const T = (o) => {
+export const T = (o) => {
 	const { shareOn, ...rest } = o;
 	return {
 		...rest,

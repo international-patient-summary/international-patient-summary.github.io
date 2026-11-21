@@ -4,7 +4,12 @@
 // Each locale falls back to English key by key, so an untranslated locale
 // still renders correctly in English rather than showing blanks.
 
-import { LANGUAGE_STRINGS, LOCALE_OVERRIDES } from './ui-strings.js';
+import { LANGUAGE_STRINGS as BASE, LOCALE_OVERRIDES } from './ui-strings.js';
+import { STRINGS_B } from './ui-strings-b.js';
+import { STRINGS_C } from './ui-strings-c.js';
+import { STRINGS_D } from './ui-strings-d.js';
+
+const LANGUAGE_STRINGS = { ...BASE, ...STRINGS_B, ...STRINGS_C, ...STRINGS_D };
 
 const EN = {
 	skipToContent: 'Skip to content',
