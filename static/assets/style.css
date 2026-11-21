@@ -1173,3 +1173,14 @@ pre {
 	font-size: 0.9em;
 	margin: 0;
 }
+/* The global `a` colour is --color-primary, a fill colour that some themes
+ * pick with no regard for contrast against the page surface; the language
+ * list is long, so draw it in the text colour and underline the links. */
+.hero-translations a {
+	color: var(--lily-text);
+	text-decoration: underline;
+}
+.hero-translations a:hover {
+	color: var(--lily-text);
+	text-decoration-thickness: 2px;
+}
