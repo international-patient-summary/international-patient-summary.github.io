@@ -23,8 +23,22 @@
 
 <div class="page page-topic">
 	<ArticleLayout class="topic" label={data.title}>
-		<header class="topic-header">
+		<header class="topic-header hero">
 			<h1>{data.title}</h1>
+			<p class="hero-tagline">{data.hero.tagline}</p>
+			<p class="hero-intro">{data.summary}</p>
+			<p class="hero-translations">
+				{data.hero.language}:
+				{#each data.languages as language, i (language.code)}
+					<a
+						href="/{language.code}/"
+						lang={language.code.split('-')[0]}
+						hreflang={language.code.split('-')[0]}
+					>
+						{language.label}
+					</a>{i < data.languages.length - 1 ? ', ' : ''}
+				{/each}
+			</p>
 		</header>
 
 		{#if sections.length}

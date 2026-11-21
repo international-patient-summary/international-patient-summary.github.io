@@ -145,9 +145,12 @@
 
 		<nav class="site-nav" aria-label="Main">
 			{#each topLinks as link (link.href)}
-				<a href={resolve(link.href.slice(1))} aria-current={current(link.href) ? 'page' : undefined}
-					>{link.label}</a
+				<a
+					href={resolve(link.href.slice(1))}
+					aria-current={current(link.href) ? 'page' : undefined}
 				>
+					{link.label}
+				</a>
 			{/each}
 			<a href={SOURCE_REPO}>GitHub</a>
 		</nav>
@@ -163,8 +166,10 @@
 				stroke-width="1.6"
 				stroke-linecap="round"
 				stroke-linejoin="round"
-				aria-hidden="true"><path d="M2.5 8h11M9 3.5 13.5 8 9 12.5"></path></svg
+				aria-hidden="true"
 			>
+				<path d="M2.5 8h11M9 3.5 13.5 8 9 12.5"></path>
+			</svg>
 		{/snippet}
 
 		<PickerBar
