@@ -1155,7 +1155,6 @@ pre {
 .hero {
 	padding-block: 2rem;
 	margin-block-end: 1.5rem;
-	border-block-end: 1px solid currentColor;
 }
 .hero h1 {
 	margin-block-end: 0.5rem;
@@ -1173,14 +1172,17 @@ pre {
 	font-size: 0.9em;
 	margin: 0;
 }
-/* The global `a` colour is --color-primary, a fill colour that some themes
- * pick with no regard for contrast against the page surface; the language
- * list is long, so draw it in the text colour and underline the links. */
+/* Lily's .hero is a --color-primary banner with --color-primary-content text;
+ * the global `a` rule would paint links in --color-primary, the banner's own
+ * fill, so draw them in the banner's text colour. */
+.hero h1,
+.hero-translations a,
+.hero-translations a:hover {
+	color: inherit;
+}
 .hero-translations a {
-	color: var(--lily-text);
 	text-decoration: underline;
 }
 .hero-translations a:hover {
-	color: var(--lily-text);
 	text-decoration-thickness: 2px;
 }
