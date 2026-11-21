@@ -1,6 +1,6 @@
-# International Patient Summary (IPS)
+# Sintesi Internazionale del Paziente (IPS)
 
-L'**International Patient Summary (IPS)**, o Sintesi Internazionale del Paziente, è uno standard mondiale per un breve estratto elettronico della cartella clinica. Contiene i fatti clinici di base di cui un clinico ha bisogno per curare un paziente in sicurezza. È progettato per essere:
+La **Sintesi Internazionale del Paziente (International Patient Summary, IPS)** è uno standard mondiale per un breve estratto elettronico della cartella clinica. Contiene i fatti clinici di base di cui un clinico ha bisogno per curare un paziente in sicurezza. È progettato per essere:
 
 - **Minimo e non esaustivo.** È un piccolo sottoinsieme selezionato di una cartella clinica, non la cartella completa.
 - **Indipendente dalla specialità.** Qualsiasi clinico può usarlo, in qualsiasi disciplina.

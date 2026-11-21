@@ -1,6 +1,6 @@
-# International Patient Summary (IPS)
+# Resumo Internacional do Paciente (IPS)
 
-O **International Patient Summary (IPS)**, ou Resumo Internacional do Paciente, é um padrão mundial para um breve extrato eletrônico do registro de saúde. Contém os fatos clínicos básicos de que um profissional de saúde precisa para tratar um paciente em segurança. Foi concebido para ser:
+O **Resumo Internacional do Paciente (International Patient Summary, IPS)** é um padrão mundial para um breve extrato eletrônico do registro de saúde. Contém os fatos clínicos básicos de que um profissional de saúde precisa para tratar um paciente em segurança. Foi concebido para ser:
 
 - **Mínimo e não exaustivo.** É um subconjunto pequeno e criteriosamente selecionado de um registro de saúde, não o registro completo.
 - **Agnóstico quanto à especialidade.** Qualquer profissional de saúde o pode usar, em qualquer disciplina.

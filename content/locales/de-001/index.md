@@ -1,6 +1,6 @@
-# International Patient Summary (IPS)
+# Internationale Patientenzusammenfassung (IPS)
 
-Die **International Patient Summary (IPS)** ist ein weltweiter Standard für einen kurzen elektronischen Auszug aus der Patientenakte. Sie enthält die grundlegenden klinischen Fakten, die Ärztinnen und Ärzte für eine sichere Behandlung benötigen. Sie ist so konzipiert, dass sie:
+Die **Internationale Patientenzusammenfassung (International Patient Summary, IPS)** ist ein weltweiter Standard für einen kurzen elektronischen Auszug aus der Patientenakte. Sie enthält die grundlegenden klinischen Fakten, die Ärztinnen und Ärzte für eine sichere Behandlung benötigen. Sie ist so konzipiert, dass sie:
 
 - **Minimal und nicht erschöpfend ist.** Sie ist eine kleine, kuratierte Teilmenge einer Patientenakte, nicht die vollständige Akte.
 - **Fachgebietsunabhängig ist.** Jede Ärztin und jeder Arzt kann sie in jeder Disziplin nutzen.

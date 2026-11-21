@@ -39,3 +39,18 @@ writeFileSync(
 	`<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n${body}\n</urlset>\n`
 );
 console.log(`sitemap: ${urls.length} urls`);
+
+// Per-locale sitemaps: build/<locale>/sitemap.xml lists that locale's routes.
+const byLocale = new Map();
+for (const u of urls) {
+	const m = u.slice(SITE_URL.length).match(/^\/([a-z]{2,3}(?:-[a-z0-9]+)+)\//);
+	if (m) byLocale.set(m[1], [...(byLocale.get(m[1]) ?? []), u]);
+}
+for (const [locale, list] of byLocale) {
+	const lbody = list.map((u) => `\t<url><loc>${xml(u)}</loc></url>`).join('\n');
+	writeFileSync(
+		join(BUILD, locale, 'sitemap.xml'),
+		`<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n${lbody}\n</urlset>\n`
+	);
+}
+console.log(`sitemap: ${byLocale.size} locale sitemaps`);

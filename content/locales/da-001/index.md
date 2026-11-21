@@ -1,6 +1,6 @@
-# International Patient Summary (IPS)
+# Internationalt patientresumé (IPS)
 
-**International Patient Summary (IPS)** er en verdensomspændende standard for et kort elektronisk udtræk af en sundhedsjournal. Det rummer de grundlæggende kliniske oplysninger, som en kliniker har brug for for at kunne behandle en patient sikkert. Det er udformet til at være:
+**Internationalt patientresumé (International Patient Summary, IPS)** er en verdensomspændende standard for et kort elektronisk udtræk af en sundhedsjournal. Det rummer de grundlæggende kliniske oplysninger, som en kliniker har brug for for at kunne behandle en patient sikkert. Det er udformet til at være:
 
 - **Minimalt og ikke udtømmende.** Det er en lille, udvalgt delmængde af en sundhedsjournal, ikke hele journalen.
 - **Specialeuafhængigt.** Enhver kliniker kan bruge det, uanset fagområde.
