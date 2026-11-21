@@ -1167,6 +1167,7 @@ pre {
 .hero-intro {
 	max-inline-size: 70ch;
 	margin-block: 0 1rem;
+	margin-inline: auto;
 }
 .hero-translations {
 	font-size: 0.9em;
