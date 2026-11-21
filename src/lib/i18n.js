@@ -4,6 +4,8 @@
 // Each locale falls back to English key by key, so an untranslated locale
 // still renders correctly in English rather than showing blanks.
 
+import { LANGUAGE_STRINGS, LOCALE_OVERRIDES } from './ui-strings.js';
+
 const EN = {
 	skipToContent: 'Skip to content',
 	navHome: 'Home',
@@ -34,12 +36,8 @@ const EN = {
 	shareMastodonLabel: 'Share on Mastodon'
 };
 
-/** Translations by locale code. Add a locale here when its strings exist. */
-const STRINGS = {
-	'en-001': EN
-};
-
 /** The UI strings for a locale, falling back to English per key. */
 export function ui(locale) {
-	return { ...EN, ...(STRINGS[locale] ?? {}) };
+	const language = locale.split('-')[0];
+	return { ...EN, ...(LANGUAGE_STRINGS[language] ?? {}), ...(LOCALE_OVERRIDES[locale] ?? {}) };
 }
